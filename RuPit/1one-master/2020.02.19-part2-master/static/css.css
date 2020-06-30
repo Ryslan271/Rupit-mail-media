@@ -2,13 +2,7 @@
     margin-top: 0;
     width: auto;
     background-color: rgb(59, 59, 59);
-    min-width: 1300px;
-}
-
-@media (max-width: 1300px) {
-    #header {
-        width: 1300px;
-    }
+    min-width: 1360px;
 }
 
 #header h1 {
