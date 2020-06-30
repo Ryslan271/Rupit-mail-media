@@ -5,9 +5,9 @@
     max-width: 1783px;
 }
 
-@media (max-width: 1300px) {
+@media (width: 1300px) {
     #header {
-        min-width: 1300px;
+        width: 1300px;
     }
 }
 
