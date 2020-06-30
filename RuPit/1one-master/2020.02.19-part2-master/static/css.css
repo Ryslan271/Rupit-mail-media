@@ -2,7 +2,7 @@
     margin-top: 0;
     width: auto;
     background-color: rgb(59, 59, 59);
-    max-width: 1300px;
+    min-width: 1300px;
 }
 
 #header h1 {
