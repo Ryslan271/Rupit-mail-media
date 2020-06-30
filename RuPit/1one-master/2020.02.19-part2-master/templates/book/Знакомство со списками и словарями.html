@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="static\css.css" href="img" rel='stylesheet' type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>RuPit</title>
+</head>
+<style>
+    body {
+        background-color: rgb(0, 0, 0);
+        color: var(--color-text-main);
+        font-family: var(--yandex-sans);
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #a1 {
+        color: #c7c5c5;
+        font-size: 26px;
+    }
+
+    #div_content6 {
+        background-color: rgb(54, 53, 53);
+        border-radius: 10px;
+        padding: 5px;
+        width: 1180px;
+        height: 670px;
+        margin: 0 auto;
+        line-height: 1.7;  
+    }
+
+    .a1{
+        color: #9ea2c5;
+    }
+
+    #h12 {
+        font-size: 35px;
+        color: rgb(37, 37, 37);
+    }
+</style>
+<body>
+    <div>
+        <div id="header">
+            <h1>
+                <a href='/content' id='atop'>Ru<span style="color: aquamarine;">Pit</span>:</a>
+                <a href='/content' id='atop' style="float: right;">Lili</a>
+                Урок №4
+                <a href="/#" id='alogin' style="float: right; margin-right: 80px;">Menu</a>
+            </h1>
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="/Знакомство со средой" id="about">№1 Знакомство со средой</a>
+        <a href="/Простые встроенные функции" id="blog" style="top: 177px">№2 Простые встроенные функции</a>
+        <a href="/Знакомство с циклами" id="projects" style="top: 257px">№3 Знакомство с циклами</a>
+        <a href="/Функции" id="contact">№5 Функции</a>
+    </div>
+    <div id="div1" style="height: 11100px; margin-bottom: 50px;">
+        <div style="height: 30px;"></div>
+
+        <div style="margin-left: 280px;">
+            <h1 id="h12" >№4 - Знакомство со списками и словарями</h1>
+        </div>
+
+        <div style="height: 30px;"></div>
+
+        <div id="div_content6" style="height: 400px;">
+            <h1 id="h1" style="margin-left: 25px; color: rgb(255, 207, 102);">Глава 1: Списки</h1>
+            <h1 id="h1" style="margin-left: 25px;">1. Списки</h1>
+
+            <p id="p_1">Мы уже знаем тип данных, который называется множество и является коллекцией (контейнером), то есть позволяет хранить несколько элементов данных, и тип строка, который тоже обладает свойствами коллекции. Сегодня мы познакомимся с ещё одним типом-коллекцией, который называется список (list). Никогда не создавайте переменные с таким именем!</p>
+
+        </div>
+
+        <div style="height: 30px;"></div>
+
+        <div id="div_content_v" style="height: 530px;">
+            <h1 id="h11">Списки</h1>
+            <p id="p_1" style="color: #e6e9d2;">Списки являются очень гибкой структурой данных и широко используются в программах. Давайте рассмотрим основные свойства списка в сравнении с теми коллекциями, которые мы уже знаем:</p>
+            <p id="p_1" style="color: #e6e9d2;">— Список хранит несколько элементов под одним именем (<span style="color: rgb(72, 109, 42);">как и множество</span>)</p>
+            <p id="p_1" style="color: #e6e9d2;">— Элементы списка могут повторяться (<span style="color: #a14545;">в отличие от множества</span>)</p>
+            <p id="p_1" style="color: #e6e9d2;">— Элементы списка упорядочены и проиндексированы, доступна операция среза (<span style="color: rgb(72, 109, 42);">как в строке</span>)</p>
+            <p id="p_1" style="color: #e6e9d2;">— Элементы списка можно изменять (<span style="color: #a14545;">в отличие от строки</span>)</p>
+            <p id="p_1" style="color: #e6e9d2;">— Элементами списка могут быть значения любого типа: целые и действительные числа, строки и даже другие списки</p>
+        </div>
+
+        <div style="height: 30px;"></div>
+
+        <div id="div_content_v" style="width: 700px; height: 430px; border-radius: 10%;">
+            <p style="text-align: center;">
+                <img src="static/img/list-set-str03.png">
+            </p>
+        </div>
+
+        <div style="height: 30px;"></div>
+
+        <div id="div_content6" style="height: 2000px;">
+            <h1 id="h1" style="margin-left: 25px;">2. Создание списков</h1>
+
+            <p id="p_1">Чтобы работать со списком, нужно его создать. Для создания списка используется операция присваивания.</p>
+
+            <div id="div_content_v" style="width: 1120px;">
+                <h1 id="h11">Важно</h1>
+                <p id="p_1" style="color: #b4b6a6;">Чтобы задать готовый список, нужно справа от знака присваивания в квадратных скобках перечислить его элементы через запятую. Здесь создаётся список из первых пяти простых чисел, который помещается в переменную primes («простые числа»):</p>
+            </div>
+
+            <p id="p_1">Для того, чтобы создать пустой список, можно воспользоваться конструкцией [] или функцией <span style="color: rgb(214, 95, 95);">list</span>.</p>
+
+            <div id="div_content_prog" style="width: 500px; height: 200px; padding: 3px;">
+                <p id="p_1">empt1 = [] <span style="color: #808080;"># это пустой список</span></p>
+                <p id="p_1">empt2 = <span style="color: #6dc993;">list</span>()  <span style="color: #808080;"># и это тоже пустой список</span></p>
+            </div>
+
+            <p id="p_1">Теперь вспомним один из рассмотренных нами ранее способов создания cтроки из заданного количества повторяющихся подстрок. Такую строку можно легко составить путём умножения на число:</p>
+    
+            <div id="div_content_prog" style="width: 400px; height: 170px; padding: 3px;">
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>("<span style="color: #4d6dff;">'$' * 5 --></span>", '<span style="color: #4d6dff;">$</span>' * 5)</p>
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>("<span style="color: #4d6dff;">'-|' * 4 + '-' --></span>", '<span style="color: #4d6dff;">-|</span>' * 4 + '<span style="color: #4d6dff;">-</span>')</p>
+            </div>
+
+            <p id="p_1">Получим:</p>
+
+            <div id="div_content_prog" style="width: 400px; height: 170px; padding: 3px;">
+                <p id="p_1">'<span style="color: #4d6dff;">$</span>' * <span style="color: #ff4500; font-weight: bold;">5</span> --> $$$$$</p>
+                <p id="p_1">'<span style="color: #4d6dff;">-|</span>' *  <span style="color: #ff4500; font-weight: bold;">4</span> + '<span style="color: #4d6dff;">-</span>' --> -|-|-|-|-</p>
+            </div>
+
+            <p id="p_1">Аналогично поступают и со списками:</p>
+
+            <div id="div_content_prog" style="width: 400px; height: 170px; padding: 3px;">
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>([<span style="color: #ff4500; font-weight: bold;">2</span>, <span style="color: #ff4500; font-weight: bold;">3</span>] * <span style="color: #ff4500; font-weight: bold;">4</span>) </p>
+                <p id="p_1">[<span style="color: #ff4500; font-weight: bold;">2</span>, <span style="color: #ff4500; font-weight: bold;">3</span>, <span style="color: #ff4500; font-weight: bold;">2</span>, <span style="color: #ff4500; font-weight: bold;">3</span>, <span style="color: #ff4500; font-weight: bold;">2</span>, <span style="color: #ff4500; font-weight: bold;">3</span>, <span style="color: #ff4500; font-weight: bold;">2</span>, <span style="color: #ff4500; font-weight: bold;">3</span>]</p>
+            </div>
+
+            <div style="height: 30px;"></div>
+    
+            <div id="div_content_v" style="width: 1120px;">
+                <h1 id="h11">Важно</h1>
+                <p id="p_1" style="color: #b4b6a6;">Для генерации списков и строк, состоящих строго из повторяющихся элементов (например, список из заданного количества нулей), умножение на число — самый короткий и красивый метод.</p>
+                <p id="p_1" style="color: #b4b6a6;">my_list = [<span style="color: #ff4500; font-weight: bold;">0</span>] * <span style="color: #ff4500; font-weight: bold;">4</span></p>
+            </div>
+        </div>
+
+        <div style="height: 30px;"></div>
+
+        <div id="div_content6" style="height: 3000px;">
+            <h1 id="h1" style="margin-left: 25px;">3. Индексация в списках</h1>
+
+            <p id="p_1">Чтобы получить отдельный элемент списка, нужно записать после него (или имени переменой, связанной с данным списком) в квадратных скобках номер (индекс) нужного элемента. Индекс отсчитывается с нуля — как в строках. Так же, как и в строках, для нумерации с конца разрешены отрицательные индексы.</p>
+            <p id="p_1">Таким образом, мы умеем использовать квадратные скобки в Python уже для трех вещей: задания нового списка (тогда внутри этих скобок перечисляются его элементы), получения элемента списка или строки по индексу (тогда в скобках указывается индекс) и получения среза строки.</p>
+
+            <div id="div_content_prog" style="width: 800px; height: 170px; padding: 3px;">
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>('<span style="color: #4d6dff;">Сумма первых двух простых чисел:</span>', primes[<span style="color: #ff4500; font-weight: bold;">0</span>] + primes[<span style="color: #ff4500; font-weight: bold;">1</span>])</p>
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>('<span style="color: #4d6dff;">Последнее из простых чисел в нашем списке:</span>', primes[<span style="color: #ff4500; font-weight: bold;">-1</span>])</p>
+            </div>
+
+            <p id="p_1">Как и в строках, попытка обратиться к индексу с несуществующим индексом вызовет ошибку:</p>
+
+            <div id="div_content_prog" style="width: 500px; height: 80px; padding: 3px;">
+                <p id="p_1"><span style="color: #ff7700; font-weight: bold;">print</span>(primes[<span style="color: #ff4500; font-weight: bold;">5</span>]) <span style="color: #808080;"># ошибка: index out of range</span></p>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
